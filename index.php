@@ -182,7 +182,8 @@
           if (isset($_POST['send_message'])) {
             $email = $_POST['email'];
             $message = $_POST['message'];
-            $send = mail("kyasa422@gmail.com", "Contact Me!", "Dari " . $email . "<br> " . $message);
+            $nama = $_POST['nama'];
+            $send = mail("kyasa422@gmail.com", "Contact Me!", "Dari " .$nama. "Email <br>  ". $email . "<br> " . $message);
 
             if ($send) {
               echo "<script> window.alert('Berhasil')</script>";
@@ -196,9 +197,14 @@
 
             <div class="mb-3">
               <label for="email">Email</label>
-              <input type="text" name="email" class="form-control" />
+              <input type="email" name="email" class="form-control" />
+
+              <label for="name">Nama</label>
+              <input type="text" name="nama" class="form-control" />
+
               <label for="exampleFormControlTextarea1" class="form-label">message me</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+
             </div>
             <button type="submit" name="send_message" class="btn btn-info px-5">Send</button>
           </form>
