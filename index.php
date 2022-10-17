@@ -10,16 +10,22 @@
   <!-- icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
   <!-- MY CSS -->
+
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body id="home">
+<body id="home" style=" font-family: 'Silkscreen', cursive;">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-info shadow-sm fixed-top">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-info shadow-sm fixed-top ">
+    <div class="container-fluid mx-5 ">
       <a class="navbar-brand" href="#home">Agus Setiawan</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,9 +44,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Me</a>
           </li>
-          <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li> -->
+
         </ul>
       </div>
     </div>
@@ -49,7 +53,7 @@
 
   <!-- Jumbotron -->
   <section class="jumbotron text-center">
-    <img src="img/WhatsApp Image 2022-10-16 at 1.28.59 AM.jpeg" alt="Agus Setiawan" srcset="" width="200px" height="200px" class=" border border-secondary rounded-circle">
+    <img src="img/p.jpeg" alt="Agus Setiawan" srcset="" width="200px" height="200px" class=" border border-secondary rounded-25">
     <h1 class="display-4">Agus Setiawan</h1>
     <p class="lead">Mahasiswa | Freelancer</p>
 
@@ -183,7 +187,7 @@
             $email = $_POST['email'];
             $message = $_POST['message'];
             $nama = $_POST['nama'];
-            $send = mail("kyasa422@gmail.com", "Contact Me!", "Dari " .$nama. "Email <br>  ". $email . "<br> " . $message);
+            $send = mail("kyasa422@gmail.com", "Contact Me!", "Dari " . $nama . "Email <br>  " . $email . "<br> " . $message);
 
             if ($send) {
               echo "<script> window.alert('Berhasil')</script>";
@@ -231,5 +235,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+<?php header("Content-type: text/css; charset: UTF-8"); ?>
 
 </html>

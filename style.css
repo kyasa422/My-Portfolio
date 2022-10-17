@@ -1,9 +1,15 @@
+body{
+
+    font-family: 'Silkscreen', cursive;
+}
+
 .jumbotron{
     padding-top: 6rem;
-    background-color: #b3cde2;
+   background-color: blueviolet;
+
 }
 #project{
-    background-color: #b3cde2;
+    background-color: #0a0f13;
 }
 section{
     padding-top: 6rem;
